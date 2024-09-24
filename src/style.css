@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+font-family: 'Roboto';
+src: url('/fonts/Roboto-Medium.woff2') format('woff2'),
+        url('/fonts/Roboto-Medium.woff') format('woff');
+font-weight: 500;
+font-style: normal;
+}
+  
+@font-face {
+font-family: 'Roboto-italic';
+src: url('/fonts/Roboto-MediumItalic.woff2') format('woff2'),
+        url('/fonts/Roboto-MediumItalic.woff') format('woff');
+font-weight: 500;
+font-style: italic;
+}
+.instagram {
+    @apply inline-block w-6 h-6;
+    background-image: url('/svg/instagram.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }

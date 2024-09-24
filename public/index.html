@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
+    <title>Tailwind css</title>
+</head>
+<body>
+    <header class="container mx-auto px-6" >
+        <div class="flex justify-between items-center py-4" x-data="{ open: false }">
+            <div class="" >
+				<a href="/">
+				    <img src="https://icadent.fr/wp-content/uploads/2023/10/61cc85b25e1b4logo-2021-1.svg" alt="">
+				</a>
+            </div>
+            <nav class="max-lg:fixed max-lg:h-svh duration-200 max-lg:w-full max-lg:p-5 max-lg:-left-full max-lg:bg-white max-lg:flex max-lg:justify-between" 
+            :class="{'max-lg:inset-0 ease-in': open, 'max-lg:-left-full ease-out': !open}">
+                
+                <ul class="flex gap-x-10 max-lg:flex-col ">
+                    <li class="py-2 relative hover:after:transition hover:after:ease-in hover:after:absolute hover:after:content-[''] hover:after:bottom-0 hover:after:left-0 hover:after:w-full hover:after:h-1 hover:after:bg-blue-300"><a class="" href="https://icadent.fr/amenagement/">Aménagement</a></li> 
+                    <li class="py-2 relative hover:after:transition hover:after:ease-in hover:after:absolute hover:after:content-[''] hover:after:bottom-0 hover:after:left-0 hover:after:w-full hover:after:h-1 hover:after:bg-blue-300"><a href="https://icadent.fr/equipement/">Équipement</a></li> 
+                    <li class="py-2 relative hover:after:transition hover:after:ease-in hover:after:absolute hover:after:content-[''] hover:after:bottom-0 hover:after:left-0 hover:after:w-full hover:after:h-1 hover:after:bg-blue-300"><a class="" href="https://icadent.fr/maintenance/">Maintenance</a></li> 
+                    <li class="py-2 relative hover:after:transition hover:after:ease-in hover:after:absolute hover:after:content-[''] hover:after:bottom-0 hover:after:left-0 hover:after:w-full hover:after:h-1 hover:after:bg-blue-300"><a href="https://icadent.fr/nos-experts/">Nos Experts</a></li> 
+                    <li class="py-2 relative hover:after:transition hover:after:ease-in hover:after:absolute hover:after:content-[''] hover:after:bottom-0 hover:after:left-0 hover:after:w-full hover:after:h-1 hover:after:bg-blue-300"><a href="https://icadent.fr/actualites/">Actualités</a></li> 
+                    <li class="py-2 relative hover:after:transition hover:after:ease-in hover:after:absolute hover:after:content-[''] hover:after:bottom-0 hover:after:left-0 hover:after:w-full hover:after:h-1 hover:after:bg-blue-300"><a href="https://icadent.fr/contact/">Contact</a></li> 
+                </ul>
+                <div class="lg:hidden" @click="open = false">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                      </svg>
+                </div>
+            </nav>
+            <div class="lg:hidden" @click="open = true">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+        </div>
+    </header>
+    <main>
+     
+    </main>
+</body>
+</html>
