@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,3 +26,12 @@ font-style: italic;
     background-repeat: no-repeat;
     background-position: center;
   }
+.btn-primary {
+        @apply text-xs text-white bg-primary-100 py-2.5 px-[22px] rounded-sm hover:bg-primary-200 transition ease-in;
+}
+.link-header{
+        @apply text-xs text-secondary-200 p-2 relative hover:text-primary-100 hover:after:transition hover:after:ease-in hover:after:absolute hover:after:content-[''] hover:after:bottom-0 hover:after:left-0 hover:after:w-full hover:after:h-1 hover:after:bg-primary-100;
+}
+.link-footer{
+        @apply text-xs text-silver relative hover:after:transition hover:after:ease-in hover:after:absolute hover:after:content-[''] hover:after:-bottom-[1px] hover:text-opacity-80 hover:after:left-0 hover:after:w-full hover:after:h-[1px] hover:after:bg-primary-100;
+}
